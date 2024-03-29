@@ -1,0 +1,100 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site1.master.cs" Inherits="IsraelFinalInClass.Site1" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style>
+        body {
+            background-image: url("picturs/RepeatingRoulette.jpg");
+            background-size: 200px;
+        }
+        .center {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+            /*navigation bar styling*/
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #38444d;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: #111;
+    }
+
+    li.dropdown {
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+    </style>
+</head>
+<body>
+    <!--<h1 style="background-color:lightcoral; text-align: center; font-size:60px; padding:10px"> JoJo's Chess Wiki </h1>-->
+    <div class="center" style="background-color:lightcoral; padding:10px">
+        <img src="picturs/RoulleteLogo.svg">
+    </div>
+        <ul> <!-- navbar -->
+        <li><a href="/Home.aspx">Home</a></li>
+          <li class="dropdown">
+            <a href="javascript:void(0)" class="dropbtn">Learn About The Game</a>
+            <div class="dropdown-content">
+              <a href="/Introduction.aspx">Introduction To The Game</a>
+              <a href="/StepByStep.aspx">Step-by-Step Guide</a>
+              <a href="#">Betting Guide</a>
+              <a href="#">Strategy Tips</a>
+              <a href="#">House Edge</a>
+            </div>
+          </li>
+        <li style="float:right"><a href="#contact">Contact</a></li>
+        <li style="float:right"><a href="#about">About</a></li>
+        <li style="float:right"><a href="/Registration.aspx">Registration</a></li>
+        <li style="float:right"><a href="/Login.aspx">Login</a></li>
+    </ul>
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+    </asp:ContentPlaceHolder>
+
+</body>
+</html>
