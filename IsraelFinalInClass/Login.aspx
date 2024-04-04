@@ -2,27 +2,27 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <main style="background-color:white; margin:50px; height:700px">
-    <h2 style="text-align: center;"> Login  כניסה  </h2>
-   
+   <main>
+    <h2 style="text-align: center;"> Login </h2>
+   <h2 style="text-align: center;"> <%=WebResponse %> </h2>
     <form>
-        <div dir="rtl">
-            <table>
-                <tr>
-                    <td>ת.ז</td>
-                    <td><input type="text" name="id" /></td>
-                </tr>
-                <tr>
-                    <td>סיסמה</td>
-                    <td><input type="password" name="pass" /></td>
-                </tr>
-                <tr>
-                    <td colspan="2">
-                        <input type="submit" name="submit" value="כניסה" />
-                    </td>
-                </tr>
-            </table>
-        </div>
+        <table>
+            <div dir="ltr">
+                    <tr>
+                        <td>ID</td>
+                        <td><input type="text" name="id" /></td>
+                    </tr>
+                    <tr>
+                        <td>Password</td>
+                        <td><input type="password" name="pass" /></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <input type="submit" name="submit" value="Sign In" />
+                        </td>
+                    </tr>
+            </div>
+        </table>
     </form>
         
     </main>

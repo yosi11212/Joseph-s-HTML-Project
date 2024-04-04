@@ -4,7 +4,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <main style="background-color:white; margin:50px; height:1300px">
+    <main>
         <h1>
             Introduction to the Game: American Roulette
         </h1>

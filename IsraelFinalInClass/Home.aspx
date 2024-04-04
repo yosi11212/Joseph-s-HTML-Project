@@ -4,7 +4,7 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
 
-    <main style="background-color:white; margin:50px; height:700px">
+    <main>
         <h1>
             Welcome To Joseph's Roullete Guide - Your introduction to American Roullete
         </h1>

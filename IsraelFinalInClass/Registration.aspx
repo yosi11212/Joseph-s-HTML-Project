@@ -2,38 +2,39 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-   <main style="background-color:white; margin:50px; height:700px">
-    <h2 style="text-align: center;"> Registration   הרשמה </h2>
+   <main>
+    <h2 style="text-align: center;"> Registration </h2>
    
     <form>
-        <div dir="rtl">
+        <div dir="ltr">
             <table>
                 <tr>
-                    <td>ת.ז</td>
+                    <td>ID</td>
                     <td><input type="text" name="id" /></td>
                 </tr>
                 <tr>
-                    <td>שם פרטי</td>
+                    <td>Full Name</td>
                     <td><input type="text" name="Fname" /></td>
                 </tr>
                 <tr>
-                    <td>סיסמה</td>
+                    <td>Password</td>
                     <td><input type="password" name="pass" /></td>
                 </tr>
                 <tr>
-                    <td>מגדר</td>
+                    <td>Gender</td>
                     <td>
-                        <input type="radio" name="gender" value="male" checked/> זכר 
-                        <input type="radio" name="gender" value="female"/> נקבה
+                        <input type="radio" name="gender" value="male" checked/> Male 
+                        <input type="radio" name="gender" value="female"/> Female
                     </td>
                 </tr>
                 <tr>
                     <td colspan="2">
-                        <input type="submit" name="submit" value="הרשמה" />
+                        <input type="submit" name="submit" value="Sign Up" />
                     </td>
                 </tr>
             </table>
         </div>
     </form>
+       <h2 style="text-align: center;"> <%=WebResponse %> </h2>
     </main>
 </asp:Content>

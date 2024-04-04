@@ -9,6 +9,7 @@ namespace IsraelFinalInClass
 {
     public partial class Registration : System.Web.UI.Page
     {
+        public string WebResponse;
         protected void Page_Load(object sender, EventArgs e)
         {
             string fileName = "Database1.mdf";//שם הקובץ
@@ -21,8 +22,8 @@ namespace IsraelFinalInClass
                 selectQuery = "SELECT * FROM " + tableName + "WHERE Id = '" + Request["Id"] + "'";
                 if (Helper.IsExist(fileName, selectQuery))// בודק אם כבר קיים משתמש בת.ז זו
                 {
-                    Response.Write("ת.ז כבר קיימת");
-                    Response.End();//ניתוק הקשר בין השרת ללקוח
+                    WebResponse ="<p>" + "ID Already Registered In The System." +" </p>";
+                    /*Response.End();//ניתוק הקשר בין השרת ללקוח*/
                 }
                 else
                 {
@@ -34,8 +35,8 @@ namespace IsraelFinalInClass
 
                     string sql = string.Format("INSERT INTO [dbo].[Table] (Id,Fname,Pass,Gender) " +
                     "VALUES('{0}','{1}','{2}','{3}')", Id, Fname, Pass, Gender);
-                    Response.Write("id = " + Id + "  fName = " + Fname);
-
+                    /*Response.Write("id = " + Id + "  fName = " + Fname);*/
+                    WebResponse ="<p>" + "Created User: "+ Id +", Welcome: "+Fname +"! </p>";
                     Helper.DoQuery(fileName,sql);
                 }
 

@@ -10,7 +10,7 @@ namespace IsraelFinalInClass
 {
     public partial class Login : System.Web.UI.Page
     {
-        public string responseve;
+        public string WebResponse;
         protected void Page_Load(object sender, EventArgs e)
         {
             string fileName = "Database1.mdf";//שם הקובץ
@@ -23,20 +23,17 @@ namespace IsraelFinalInClass
                   "AND Pass = '" + Request["Pass"] + "'";
                 if (!Helper.IsExist(fileName, selectQuery))// בודק אם כבר קיים משתמש בת.ז זו
                 {
-                    Response.Write("שם משתמש או סיסמא לא נכונים");
-                    Response.End();//ניתוק הקשר בין השרת ללקוח
+                    WebResponse ="<p>" + "Incorrect Username Or Password" +". </p>";
                 }
                 else
                 {
-                    string Id = Request["Id"];
-                    string Pass = Request["Pass"];
 
                     selectQuery = "SELECT Fname FROM " + tableName + "WHERE Id = '" + Request["Id"] + "' " +
                   "AND Pass = '" + Request["Pass"] + "'";
                     DataTable response = Helper.ExecuteDataTable(fileName, selectQuery);
 
-                    responseve ="<p1>" + response.Rows[0] +"</p>";
-
+                    WebResponse ="<p>" + "Welcome " + response.Rows[0][0] +". </p>";
+                    
                 }
 
             }

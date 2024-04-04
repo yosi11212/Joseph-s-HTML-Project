@@ -169,34 +169,55 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="About.aspx" />
     <Content Include="App_Data\Database1.mdf" />
     <Content Include="App_Data\Database1_log.ldf">
       <DependentUpon>Database1.mdf</DependentUpon>
     </Content>
+    <Content Include="BettingGuide.aspx" />
+    <Content Include="Contact.aspx" />
     <Content Include="Home.aspx" />
-    <Content Include="Index.aspx" />
-    <Content Include="Index.html" />
+    <Content Include="HouseEdge.aspx" />
     <Content Include="Introduction.aspx" />
-    <Content Include="Introduction.html" />
     <Content Include="Login.aspx" />
     <Content Include="picturs\pic1.jpeg" />
     <Content Include="Registration.aspx" />
     <Content Include="ShowAllNoAdmin.aspx" />
-    <Content Include="Signin.aspx" />
     <Content Include="StepByStep.aspx" />
+    <Content Include="StrategyTips.aspx" />
     <Content Include="StyleSheet.css" />
     <Content Include="Web.config" />
-    <Content Include="EmptyHtmlFile.html" />
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="App_Code\Helper.cs" />
-    <Compile Include="Signin.aspx.cs">
-      <DependentUpon>Signin.aspx</DependentUpon>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Signin.aspx.designer.cs">
-      <DependentUpon>Signin.aspx</DependentUpon>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="App_Code\Helper.cs" />
+    <Compile Include="BettingGuide.aspx.cs">
+      <DependentUpon>BettingGuide.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BettingGuide.aspx.designer.cs">
+      <DependentUpon>BettingGuide.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Contact.aspx.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Contact.aspx.designer.cs">
+      <DependentUpon>Contact.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="HouseEdge.aspx.cs">
+      <DependentUpon>HouseEdge.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="HouseEdge.aspx.designer.cs">
+      <DependentUpon>HouseEdge.aspx</DependentUpon>
     </Compile>
     <Compile Include="StepByStep.aspx.cs">
       <DependentUpon>StepByStep.aspx</DependentUpon>
@@ -204,6 +225,13 @@
     </Compile>
     <Compile Include="StepByStep.aspx.designer.cs">
       <DependentUpon>StepByStep.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="StrategyTips.aspx.cs">
+      <DependentUpon>StrategyTips.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="StrategyTips.aspx.designer.cs">
+      <DependentUpon>StrategyTips.aspx</DependentUpon>
     </Compile>
     <Content Include="App_Code\MyAdoHelper.cs" />
     <Compile Include="Home.aspx.cs">
@@ -213,18 +241,9 @@
     <Compile Include="Home.aspx.designer.cs">
       <DependentUpon>Home.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Introduction.aspx.cs">
       <DependentUpon>Introduction.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Introduction.aspx.designer.cs">
-      <DependentUpon>Introduction.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
